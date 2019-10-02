@@ -1,16 +1,11 @@
 <!-- GUESSMYNUMBER PRIMARY IN-PLAY VIEW -->
-<%@ taglib prefix="num" uri="RandomNumber"%>
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Guessing Game</title>
 	</head>
-	<body>
-	
+	<body>	
 		<h1>Can you guess my number?</h1>
-
 		<p>
 			<strong> 
 			A whole number between 1 and 100 has been chosen. See if you can guess the number. 
