@@ -1,4 +1,4 @@
-<!-- INITIAL/DEFAULT VIEW -->
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,14 +16,20 @@
 			<input type="hidden" name="action" value="guess">
 			<input type="text" name="guess">
 			<input type="submit" value="Submit">
+		<br>
+		<br>
+		<!-- Display the last guess here -->
+		<c:if test="${not empty lastGuess}"><p>You guessed ${lastGuess}</p>.</c:if>
 		
+		<!-- Display the message to guess higher or lower -->
+		<c:if test=
+			  </c:if>
+			
 		<!-- Display this section only if the user has submitted a prior guess -->
 		<c:if test="${not empty guessList}">
 		<%include file="/WEB-INF/views/guessList.jspf"%>
-			<h2>You guessed <tt>${lastGuess}</tt>.</h2><br></c:if>
-
-		<!-- Display this message is the user guesses too low -->
-		<p>Guess higher!</p>
+		
+		
 			
 			
 			
