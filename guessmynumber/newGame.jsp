@@ -14,7 +14,7 @@
 		<form method="POST" action="main">
 			Enter your guess: 
 			<input type="hidden" name="action" value="guess">
-			<input type="text" name="guess" min="1" max="5">
+			<input type="text" name="guess">
 			<input type="submit" value="Submit">
 		</form>
 	</body>
