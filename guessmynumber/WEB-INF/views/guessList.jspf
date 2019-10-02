@@ -1,8 +1,0 @@
-<!-- guessList fragment-->
-<h2>You guessed: </h2>
-<ul>
-	<c:forEach var="guessed" items="${guessList}">
-		<li>${guessed}</li>
-	</c:forEach>
-</ul>
-
