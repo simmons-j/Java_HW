@@ -16,6 +16,10 @@
 			<input type="hidden" name="action" value="guess">
 			<input type="text" name="guess">
 			<input type="submit" value="Submit">
+		
+		<!-- Do not display this section if the user has not submitted any guesses --> 
+
+		
 		</form>
 	</body>
 </html>
