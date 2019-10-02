@@ -17,9 +17,16 @@
 			<input type="text" name="guess">
 			<input type="submit" value="Submit">
 		
-		<!-- Do not display this section if the user has not submitted any guesses --> 
+		<!-- Display this section only if the user has submitted a prior guess -->
+		<c:if test="${not empty guessList}">
+		<%include file="/WEB-INF/views/guessList.jspf"%>
+			<h2>You guessed <tt>${lastGuess}</tt>.</h2><br></c:if>
 
-		
+		<!-- Display this message is the user guesses too low -->
+		<p>Guess higher!</p>
+			
+			
+			
 		</form>
 	</body>
 </html>
