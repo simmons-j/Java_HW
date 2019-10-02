@@ -13,12 +13,9 @@
 		<br>
 		<form method="POST" action="main">
 			Enter your guess: 
-			<input type="hidden" name="action" value="guess"></input>
-			<input type="text" name="action" value="guess"></input>
-			<input type = "submit" value = "Submit"></input>
-		</form>
-		<form method="GET" action="guess.jsp">
-
+			<input type="hidden" name="action" value="guess">
+			<input type="text" name="guess" min="1" max="5">
+			<input type="submit" value="Submit">
 		</form>
 	</body>
 </html>
